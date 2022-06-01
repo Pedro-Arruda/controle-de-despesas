@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F0F2F5;
+    font-family: Poppins, sans-serif;
+}
+
+
+nav {
+    background-color: #0D99FF;
+    height: 70px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    max-width: 1200px;
+    height: 250px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.btn-adiciona {
+    font-size: 1.2em;
+    padding: 10px;
+    color: #fff;
+    background-color: #0D99FF;
+    border: 1px solid #0D99FF;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.resultados {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada, .saida, .total {
+    font-size: 1.2em;
+    background-color: #fff;
+    width: 350px;
+    border-radius: 50px;
+    padding: 10px 40px;
+    height: 90px;
+}
+
+.total {
+    background-color: #39CD98;
+    color: #fff;
+}
+
+.info-resultados {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.financas {
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0 10px;
+}
+
+table tr  {
+    background-color: #fff;
+    height: 40px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+table thead th{
+    background-color: #F0F2F5;
+    font-size: 1.3em;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+}
+
+.conteudo-modal {
+    padding: 40px 50px;
+    width: 600px;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.conteudo-modal h1 {
+    margin-bottom: 10px;
+}
+
+.conteudo-modal input {
+    padding: 10px;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: #eff0f4;
+    border: 1px solid rgb(194, 192, 192);
+    margin: 15px 0;
+}
+
+.conteudo-modal .btn-financas {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.conteudo-modal .btn-financas button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:  240px;
+    cursor: pointer;
+    border: 1px solid rgb(194, 192, 192);
+    padding: 5px;
+}
+
+.btn-financas button img {
+    margin-right: 20px;
+    width: 30px;
+}
+
+.conteudo-modal #btn-cadastro {
+    padding: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #39CD98;
+    border: 1px solid #39CD98;
+    height: 50px;
+}
+
+.conteudo-modal #fecha-modal {
+    padding: 5px 10px;
+    float: right;
+    background-color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#btn-entrada:focus {
+    background-color: rgba(51, 204, 149, 0.3);
+}
+
+#btn-saida:focus {
+    background-color: rgba(244, 67, 54, 0.3);
+}
+
+.inativo {
+    display: none;
+}

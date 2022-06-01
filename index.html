@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>Controle de Finanças</h1>
+    </nav>
+
+    <header>
+        <button class="btn-adiciona" onclick="mostraModal()">Transações</button>
+
+        <div class="resultados">
+            <div class="entrada">
+                <div class="info-resultados">
+                    <span>Entradas</span>
+                    <img src="img/seta1.svg" alt="">
+                </div>
+
+                <h2 id="total-entrada">0</h2>
+            </div>
+
+            <div class="saida">
+
+                <div class="info-resultados">
+                    <span>Saídas</span>
+                    <img src="img/seta2.svg" alt="">
+                </div>
+
+                <h2 id="total-saida">0</h2>
+            </div>
+            
+            <div class="total">
+                <div class="info-resultados">
+                    <span>Total</span>
+                    <img src="img/dinheiro.svg" alt="">
+                </div>
+
+                <h2 id="total-geral">0</h2>
+            </div>
+        </div>
+    </header>
+
+    <main class="financas">
+        <table class="tabela">
+            <thead>
+                <th>Título</th>
+                <th>Valor</th>
+                <th>Categoria</th>
+                <th>Data</th>
+            </thead>
+        </table>
+
+    </main>
+    
+    <div class="modal inativo">
+        <div class="conteudo-modal">
+                        <button id="fecha-modal" onclick="mostraModal()">X</button>
+
+            <h1>Cadastrar Transação</h1>
+
+            <div>
+                <input type="text" placeholder="Título" id="nome-transacao">
+
+                <input type="text" placeholder="R$100,00" id="valor-transacao">
+
+                <div class="btn-financas">
+                    <button id="btn-entrada" onclick="determinaTransacao('entrada')"> 
+                        <img src="img/seta3.svg" alt="">
+                        <p>Entrada</p>
+                    </button>
+
+                    <button id="btn-saida" onclick="determinaTransacao('saida')">
+                        <img src="img/seta2.svg" alt="">
+                        <p>Saída</p>
+                    </button>
+                </div>
+
+                <input type="text" placeholder="Categoria" id="categoria-transacao">
+
+                <input type="date" id="data-transacao">
+
+                <button id="btn-cadastro" onclick="criaTd()">Cadastrar</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
